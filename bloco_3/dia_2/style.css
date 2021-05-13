@@ -1,0 +1,31 @@
+body{
+  font-size: 16px;
+}
+h1{
+  color: orange;
+  font-size: 65px;
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+ul{
+  background-color: purple;
+  font-style: italic;
+}
+.favColor{
+  background-color: black;
+}
+p{
+  color: aliceblue;
+  font-weight: 600px;
+  font-size: 3em;
+  text-align: left;
+}
+#amarelo{
+  color: yellow;
+}
+#vermelho{
+  color: red;
+}
+#marrom{
+  color: brown;
+}
