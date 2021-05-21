@@ -1,3 +1,13 @@
-A formação da Trybe é baseada no uso de metodologias ativas, ou seja, você aprenderá na prática, evoluindo com a mão na massa.
+<h1> Repositório de exercícios </h1>
+<h4>Ao longo do formação na Tribe utilizarei esse repositório para colocar os exercícios feitos diariamente<h3>
 
-É assim que você cresce para acelerar sua carreira e transformar sua vida.
+
+<ul>Tecnologias que serão aprendidas e utilizadas ao longo da formação
+  
+	<li>JavaScript</li>
+	<li>CSS3</li>
+	<li>HTML5</li>
+	<li>React</li>
+	<li>Node.js</li>
+	<li>Entre outras</li>
+</ul>
