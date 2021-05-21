@@ -4,10 +4,10 @@
 
 <ul>Tecnologias que serão aprendidas e utilizadas ao longo da formação
   
-	<li>JavaScript</li>
-	<li>CSS3</li>
-	<li>HTML5</li>
-	<li>React</li>
-	<li>Node.js</li>
-	<li>Entre outras</li>
+	JavaScript
+	CSS3
+	HTML5
+	React
+	Node.js
+	Entre outras
 </ul>
