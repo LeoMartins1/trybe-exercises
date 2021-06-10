@@ -84,10 +84,18 @@
       document.querySelector('.main-content').appendChild(rc)
 
       const img = document.createElement('img')
-      img.innerHTML = 'src = https://picsum.photos/200'
       img.setAttribute('class', 'small-image')
       img.setAttribute('src', 'https://picsum.photos/200')
       document.querySelector('.left-content').appendChild(img)
+
+      const list = document.createElement('ul')
+      document.querySelector('.right-content').appendChild(list)
+      for(let index = 1; index <= 10; index += 1) {
+        let item = document.createElement('li')
+        item.innerText = index
+        document.querySelector('ul').appendChild(item)
+      }
+      
     </script>
   </body>
 </html>
