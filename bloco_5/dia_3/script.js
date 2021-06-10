@@ -33,9 +33,9 @@ createDaysOfTheMonth();
 const day = document.getElementsByClassName('day')
 
 function holiday() {
-  day[26].classList.add('holyday')
-  day[27].classList.add('holyday')
-  day[32].classList.add('holyday')
+  day[26].classList.add('holiday')
+  day[27].classList.add('holiday')
+  day[32].classList.add('holiday')
 }
 
 holiday()
@@ -50,10 +50,18 @@ function friday() {
 friday()
 
 function createButton(str) {
-let btn = document.createElement('button')
-btn.setAttribute('id', 'btn-holiday')
-btn.innerHTML = str
-document.querySelector('.buttons-container').appendChild(btn)
+  let btn = document.createElement('button')
+  btn.setAttribute('id', 'btn-holiday')
+  btn.innerHTML = str
+  document.querySelector('.buttons-container').appendChild(btn)
 }
 
 createButton('Feriados')
+
+document.querySelector('#btn-holiday').addEventListener('click', () =>{
+  let holi = document.getElementsByClassName('holiday')
+  for (let index = 0; index<holi.length; index += 1){
+    holi[index].classList.toggle('btn-holiday')
+    console.log(holi)
+  }
+})
