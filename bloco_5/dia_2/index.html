@@ -73,7 +73,15 @@
 
       const anyText = document.createElement('p')
       anyText.innerText = 'krcs'
-      document.querySelector('p').appendChild(anyText)
+      document.querySelector('.main-content').appendChild(anyText)
+
+      const lc = document.createElement('div')
+      lc.setAttribute('class', 'left-content')
+      document.querySelector('.main-content').appendChild(lc)
+
+      const rc = document.createElement('div')
+      rc.setAttribute('class', 'right-content')
+      document.querySelector('.main-content').appendChild(rc)
     </script>
   </body>
 </html>
