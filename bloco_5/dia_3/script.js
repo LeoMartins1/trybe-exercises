@@ -48,3 +48,12 @@ function friday() {
 }
 
 friday()
+
+function createButton(str) {
+let btn = document.createElement('button')
+btn.setAttribute('id', 'btn-holiday')
+btn.innerHTML = str
+document.querySelector('.buttons-container').appendChild(btn)
+}
+
+createButton('Feriados')
