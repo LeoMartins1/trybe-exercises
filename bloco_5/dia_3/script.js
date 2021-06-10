@@ -49,19 +49,27 @@ function friday() {
 
 friday()
 
-function createButton(str) {
+function createButtonHoli(str) {
   let btn = document.createElement('button')
   btn.setAttribute('id', 'btn-holiday')
   btn.innerHTML = str
   document.querySelector('.buttons-container').appendChild(btn)
 }
 
-createButton('Feriados')
+createButtonHoli('Feriados')
 
 document.querySelector('#btn-holiday').addEventListener('click', () =>{
   let holi = document.getElementsByClassName('holiday')
   for (let index = 0; index<holi.length; index += 1){
     holi[index].classList.toggle('btn-holiday')
-    console.log(holi)
   }
 })
+
+function createButtonFri(str) {
+  let btn = document.createElement('button')
+  btn.setAttribute('id', 'btn-friday')
+  btn.innerHTML = str
+  document.querySelector('.buttons-container').appendChild(btn)
+}
+
+createButtonFri('Sexta-Feira')
