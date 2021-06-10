@@ -82,6 +82,12 @@
       const rc = document.createElement('div')
       rc.setAttribute('class', 'right-content')
       document.querySelector('.main-content').appendChild(rc)
+
+      const img = document.createElement('img')
+      img.innerHTML = 'src = https://picsum.photos/200'
+      img.setAttribute('class', 'small-image')
+      img.setAttribute('src', 'https://picsum.photos/200')
+      document.querySelector('.left-content').appendChild(img)
     </script>
   </body>
 </html>
