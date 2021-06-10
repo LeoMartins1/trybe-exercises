@@ -73,3 +73,20 @@ function createButtonFri(str) {
 }
 
 createButtonFri('Sexta-Feira')
+
+
+document.querySelector("#btn-friday").addEventListener("click", () => {
+  let fri = document.getElementsByClassName("friday");
+  if(fri[0].innerHTML == 'SEXXTOU!!'){
+    fri[0].innerHTML = '4'
+    fri[1].innerHTML = '11'
+    fri[2].innerHTML = '18'
+    fri[3].innerHTML = '25'
+    console.log(fri)
+  } else {
+    for (let index = 0; index < fri.length; index += 1) {
+      fri[index].innerHTML = 'SEXXTOU!!'
+     } 
+  }
+});
+
