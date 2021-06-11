@@ -8,23 +8,23 @@
   </head>
   <body>
     <form>
-      <fieldset>
-        <label for="name">Nome</label>
+      <fieldset id="first">
+        <label for="name">Nome:</label>
         <input type="text" id="name" placeholder="Digite seu nome" maxlength="40" required><br>
 
-        <label for="email">Email</label>
+        <label for="email">Email:</label>
         <input type="email" id="email" placeholder="Digite seu email" maxlength="50" required><br>
 
-        <label for="cpf">CPF</label>
+        <label for="cpf">CPF:</label>
         <input type="text" id="cpf" placeholder="Digite seu CPF" maxlength="11" required><br>
 
-        <label for="address">Endereço</label>
+        <label for="address">Endereço:</label>
         <input type="text" id="address" placeholder="Digite seu endereço" maxlength="200" required><br>
 
-        <label for="city">Cidade</label>
+        <label for="city">Cidade:</label>
         <input type="text" id="city" placeholder="Digite sua cidade" maxlength="28" required><br>
 
-        <label for="state">Estado</label>
+        <label for="state">Estado:</label>
         <select id="state" placeholder="Escolha seu estado" required>
         </select><br>
 
@@ -33,7 +33,7 @@
      
       </fieldset>
 
-      <fieldset>
+      <fieldset id ="second">
         <label for="resume">Resumo do currículo</label>
         <textarea id="resume" maxlength="1000" required></textarea><br>
 
@@ -49,8 +49,8 @@
         <input type="text" id="year" placeholder="year" required>
 
       </fieldset>
-      <button id="x">a
-      </button>
+      <button id="btn-fns">Concluir formulário</button>
+      <button id="btn-clr">Limpar formulário</button>
     </form>
   </body>
 </html>

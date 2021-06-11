@@ -14,8 +14,6 @@ function ifDate (){
     alert('ano invalido')
   }
 }
-document.querySelector('#x').addEventListener('click', ifDate)
-
 
 function generateStates(){
   for(let index = 0; index < 26; index ++){
@@ -52,4 +50,68 @@ function generateStates(){
 }
 generateStates()
 
+function createDiv() {
+  const divForm = document.createElement("div");
+  divForm.classList = "divF";
+  document.querySelector("body").appendChild(divForm);
+}
 
+function firstSet() {
+  let first = document.querySelector("#first").children;
+  for (let index = 0; index < first.length; index += 1) {
+    if (first[index].tagName == "LABEL") {
+      const label = document.createElement("div");
+      label.innerText = first[index].innerText;
+      document.querySelector(".divF").appendChild(label);
+      console.log(label);
+    } else if (first[index].tagName == "INPUT") {
+      const input = document.createElement("div");
+      input.innerText = first[index].value;
+      document.querySelector(".divF").appendChild(input);
+    } else if (first[index].tagName == "BR") {
+      const br = document.createElement("p");
+      document.querySelector(".divF").appendChild(br);
+    }
+  }
+}
+
+function secondSet() {
+  let second = document.querySelector("#second").children;
+  for (let index = 0; index < second.length; index += 1) {
+    if (second[index].tagName == "LABEL") {
+      const label = document.createElement("div");
+      label.innerText = second[index].innerText;
+      document.querySelector(".divF").appendChild(label);
+      console.log(label);
+    } else if (second[index].tagName == "INPUT") {
+      const input = document.createElement("div");
+      input.innerText = second[index].value;
+      document.querySelector(".divF").appendChild(input);
+    } else if (second[index].tagName == "BR") {
+      const br = document.createElement("p");
+      document.querySelector(".divF").appendChild(br);
+    }
+  }
+}
+
+  document.querySelector("#btn-fns").addEventListener("click", (event) => {
+    ifDate();
+    createDiv();
+    firstSet();
+    secondSet();
+    event.preventDefault();
+  });
+
+
+  document.querySelector("#btn-clr").addEventListener("click", () => {
+    let first = document.querySelector("#first").children;
+    let second = document.querySelector("#second").children;
+    for (let index = 0; index < first.length; index += 1) {
+      first[index].value = "";
+    }
+    for (let index = 0; index < second.length; index += 1) {
+      second[index].value = "";
+    }
+    let divF =document.querySelector('.divF')
+    divF.remove()
+  });
