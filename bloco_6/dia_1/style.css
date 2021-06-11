@@ -14,3 +14,7 @@
 #year {
   width: 30px;
 }
+
+div{
+  display: inline-block;
+}
