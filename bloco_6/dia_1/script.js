@@ -56,40 +56,24 @@ function createDiv() {
   document.querySelector("body").appendChild(divForm);
 }
 
-function firstSet() {
-  let first = document.querySelector("#first").children;
-  for (let index = 0; index < first.length; index += 1) {
-    if (first[index].tagName == "LABEL") {
-      const label = document.createElement("div");
-      label.innerText = first[index].innerText;
-      document.querySelector(".divF").appendChild(label);
-      console.log(label);
-    } else if (first[index].tagName == "INPUT") {
-      const input = document.createElement("div");
-      input.innerText = first[index].value;
-      document.querySelector(".divF").appendChild(input);
-    } else if (first[index].tagName == "BR") {
-      const br = document.createElement("p");
-      document.querySelector(".divF").appendChild(br);
-    }
-  }
-}
-
-function secondSet() {
-  let second = document.querySelector("#second").children;
-  for (let index = 0; index < second.length; index += 1) {
-    if (second[index].tagName == "LABEL") {
-      const label = document.createElement("div");
-      label.innerText = second[index].innerText;
-      document.querySelector(".divF").appendChild(label);
-      console.log(label);
-    } else if (second[index].tagName == "INPUT") {
-      const input = document.createElement("div");
-      input.innerText = second[index].value;
-      document.querySelector(".divF").appendChild(input);
-    } else if (second[index].tagName == "BR") {
-      const br = document.createElement("p");
-      document.querySelector(".divF").appendChild(br);
+function createCV() {
+  let set = document.getElementsByTagName("fieldset")
+  for (let indexSet = 0; indexSet<set.length; indexSet +=1){
+    let content = set[indexSet].children
+    for (let index = 0; index < content.length; index += 1) {
+      if (content[index].tagName == "LABEL") {
+        const label = document.createElement("div");
+        label.innerText = content[index].innerText;
+        document.querySelector(".divF").appendChild(label);
+        console.log(label);
+      } else if (content[index].tagName == "INPUT") {
+        const input = document.createElement("div");
+        input.innerText = content[index].value;
+        document.querySelector(".divF").appendChild(input);
+      } else if (content[index].tagName == "BR") {
+        const br = document.createElement("p");
+        document.querySelector(".divF").appendChild(br);
+      }
     }
   }
 }
@@ -97,8 +81,7 @@ function secondSet() {
   document.querySelector("#btn-fns").addEventListener("click", (event) => {
     ifDate();
     createDiv();
-    firstSet();
-    secondSet();
+    createCV();
     event.preventDefault();
   });
 
