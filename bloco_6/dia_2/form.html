@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <label for="name">Nome</label>
+        <input type="text" id="name" placeholder="Digite seu nome" maxlength="40" required><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Digite seu email" maxlength="50" required><br>
+
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" placeholder="Digite seu CPF" maxlength="11" required><br>
+
+        <label for="address">Endereço</label>
+        <input type="text" id="address" placeholder="Digite seu endereço" maxlength="200" required><br>
+
+        <label for="city">Cidade</label>
+        <input type="text" id="city" placeholder="Digite sua cidade" maxlength="28" required><br>
+
+        <label for="state">Estado</label>
+        <select id="state" placeholder="Escolha seu estado" required>
+        </select><br>
+
+        <label for="house"><input type="radio" id="house" name="type" required>Casa</label>
+        <label for="apart"><input type="radio" id="apart" name="type" required>Apartamento</label>
+     
+      </fieldset>
+
+      <fieldset>
+        <label for="resume">Resumo do currículo</label>
+        <textarea id="resume" maxlength="1000" required></textarea><br>
+
+        <label for="role">Cargo</label>
+        <input type="text" id="role" placeholder="Digite seu cargo" maxlength="40" required><br>
+        
+        <label for="desciption">Descrição do cargo</label>
+        <input type="text" id="desciption" placeholder="Descreva seu cargo" maxlength="500" required><br>
+       
+        <label for="day">Date de início</label>
+        <input type="text" id="day" placeholder="dia" required>/
+        <input type="text" id="month" placeholder="mês" required>/
+        <input type="text" id="year" placeholder="year" required>
+
+      </fieldset>
+      <button id="x">a
+      </button>
+    </form>
+  </body>
+</html>

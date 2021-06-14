@@ -1,0 +1,16 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#day {
+  width: 25px;
+}
+
+#month {
+  width: 30px;
+}
+
+#year {
+  width: 30px;
+}
